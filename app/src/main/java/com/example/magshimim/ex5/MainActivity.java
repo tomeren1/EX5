@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         RelativeLayout rl1 = (RelativeLayout) findViewById(R.id.rl);
         TextView tvIntro = (TextView) findViewById(R.id.tvIntro);
@@ -47,6 +48,12 @@ public class MainActivity extends Activity {
         ll2.setLayoutParams(llp3);
         ll1.addView(ll2);
 
+
+
+
+
+
+
         CheckBox c1 = new CheckBox(this);
         c1.setId(R.id.checkBox1);
         LinearLayout.LayoutParams checklp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -67,7 +74,7 @@ public class MainActivity extends Activity {
     private int toPxel(int dp)
     {
         Resources r = getResources();
-        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 14, r.getDisplayMetrics());
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics());
         return (int)px;
     }
 
