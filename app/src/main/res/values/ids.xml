@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <item name="rl" type="id"/>
+    <item name="tvIntro" type="id"/>
+    <item name="ll1_Id" type="id"/>
+    <item name="tvIntro2" type="id"/>
+    <item name="ll2_Id" type="id"/>
+    <item name="checkBox1" type="id"/>
+    <item name="checkbox2" type="id"/>
+</resources>
